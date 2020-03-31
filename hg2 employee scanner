@@ -1,0 +1,32 @@
+public class HG2 {
+    public static void printIn(HyperEmployee e) {
+
+        System.out.printf("%12s%13s%13s%13s\n", e.getName(), e.getIdNumber(), e.getDepartment(), e.getPosition());
+
+    }
+
+    public static void main(String[] args)
+    {
+/* name
+   id
+   department
+   position
+ */
+//            System.out.println("-- Employee Entry Form --");
+//
+//            System.out.println("Enter name");
+//            System.out.println("Enter ID");
+//            System.out.println("Enter department");
+//            System.out.println("Enter position");
+        HyperEmployee e1 = new HyperEmployee();
+        HyperEmployee e2 = new HyperEmployee();
+        HyperEmployee e3 = new HyperEmployee();
+
+
+        System.out.printf("%12s%13s%13s%13s\n","Name", "ID", "Department","Position");
+        printIn(e1);
+        printIn(e2);
+        printIn(e3);
+
+    }
+}
