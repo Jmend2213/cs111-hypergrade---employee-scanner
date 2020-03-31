@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+
+public class HyperEmployee {
+    Scanner keyboard = new Scanner(System.in);
+    private String name;
+    private int idNumber;
+    private String department;
+    private String position;
+
+    public HyperEmployee() {
+
+        System.out.println("-- Employee Entry Form --");
+        System.out.println("Enter name");
+        System.out.println("Enter ID");
+        System.out.println("Enter department");
+        System.out.println("Enter position");
+
+
+
+        name = keyboard.nextLine();
+//        System.out.println(name);
+        idNumber = keyboard.nextInt();
+//        System.out.println(idNumber);
+        keyboard.nextLine();
+        department = keyboard.nextLine();
+//        System.out.println(department);
+        position = keyboard.nextLine();
+//        System.out.println(position);
+
+
+    }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getIdNumber() {
+            return idNumber;
+        }
+
+        public String getDepartment () {
+            return department;
+        }
+
+        public String getPosition ()
+        {
+            return position;
+        }
+    }
